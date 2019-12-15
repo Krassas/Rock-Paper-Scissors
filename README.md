@@ -1,4 +1,5 @@
 # Rock-Paper-Scissors
+A game made with HTML, CSS and Javascript.
 
 # Origin & Goals
 I came across the idea for this project while browsing frontend mentor(a site with code challenges), i liked it and decided to implement
@@ -8,11 +9,11 @@ it.
 The development for this project included the use of DOM manipulation techniques and event listeners.
 The actual JavaScript file has comments describing what is happening, but essentially this is what happens in the background:
 
-1.One of the 3 (Rock, Paper, Scissor) buttons is clicked.
-2.The computer then generates a random number that is assigned to Rock, Paper, or Scissors.
-3.The user’s choice and computer’s choice are checked.
-4.The user’s score or the computer’s score is increased by one… or no one’s score (a tie) is raised.
-5.Update all the page’s results so the user is aware of what happened.
+1.One of the 3 (Rock, Paper, Scissor) buttons is clicked.<br/>
+2.The computer then generates a random number that is assigned to Rock, Paper, or Scissors.<br/>
+3.The user’s choice and computer’s choice are checked.<br/>
+4.The user’s score or the computer’s score is increased by one… or no one’s score (a tie) is raised.<br/>
+5.Update all the page’s results so the user is aware of what happened.<br/>
 
 There are also two buttons, the rules button which displays the rules and the new game button which sets the scores back to zero.
 
