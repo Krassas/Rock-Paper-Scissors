@@ -15,7 +15,7 @@ The actual JavaScript file has comments describing what is happening, but essent
 4.The user’s score or the computer’s score is increased by one… or no one’s score (a tie) is raised.<br/>
 5.Update all the page’s results so the user is aware of what happened.<br/>
 
-There are also two buttons, the rules button which displays the rules and the new game button which sets the scores back to zero.
+There are also two more buttons, the rules button which displays the rules and the new game button which sets the scores back to zero.
 
 # Design
 The main game area has three buttons, rock, paper and scissor. Above that there is the header which contains the logo and the two scores 
