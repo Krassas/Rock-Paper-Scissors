@@ -1,0 +1,300 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(
+        circle,
+        hsl(214, 47%, 23%),
+        hsl(237, 49%, 15%)
+      );
+    position: relative;
+}
+
+/*********************
+-header
+*********************/
+
+header {     
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 8px;
+}
+
+.keep-score {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+
+.score {
+    
+    margin-top: 2%;
+    margin-right:2%;
+    margin-bottom: 2%;
+    width: 20%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-radius: 8px;
+    color: hsl(229, 64%, 46%);
+    background-color: #fff; 
+    text-align: center;   
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.number-1, .number-2 {
+   font-size: 3em; 
+   color: hsl(229, 25%, 31%);
+}
+
+/*********************
+-main
+*********************/
+
+.game {
+    margin-top: 10vh;   
+    height: 50vh;
+}
+
+.cover {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.paper {
+    max-width: 100%;
+    height: auto;  
+    padding: 4%;
+    background-color: #fff;
+    border: 15px solid hsl(230, 89%, 62%);  
+    border-radius: 100%;
+    cursor: pointer;      
+}
+
+.scissors {
+    max-width: 100%;
+    height: auto;  
+    padding: 4%;
+    background-color: #fff;
+    border: 15px solid hsl(39, 89%, 49%);  
+    border-radius: 100%;
+    cursor: pointer;    
+}
+.rock {
+    max-width: 100%;
+    height: auto;  
+    padding: 4%;
+    background-color: #fff;
+    border: 15px solid hsl(349, 71%, 52%);  
+    border-radius: 100%;
+    cursor: pointer;  
+}
+
+/*********************
+-rules
+*********************/
+
+.rules {
+    margin-top: 2vh;
+    margin: auto;
+    width: 95%;
+    display: flex;  
+    justify-content: space-between;
+}
+
+.toggle {
+  width: 150px;
+  height: 50px;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;  
+}
+
+.newGame {
+  width: 150px;
+  height: 50px;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 8px; 
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px; 
+}
+
+#myDIV {  
+    margin: auto; 
+    width: 23%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2%;
+    background-color: #fff;  
+    border-radius: 8px;  
+    z-index: 1; 
+    display: none; 
+}
+
+.expl {
+    margin: 8%;
+    font-size: 2rem;   
+    color: hsl(229, 25%, 31%);
+}
+
+.close {
+    float: right;
+    color:hsl(217, 16%, 45%);
+    cursor: pointer;
+}
+
+.expl-rules {
+    max-width: 100%;
+}
+
+/*********************
+-compare choices
+*********************/
+
+.nodisplay {
+    height: 50vh;
+    display: none;  
+}
+
+.choice {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.picked {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.result {
+    color: #fff;
+    font-size: 32px;
+    display: none;
+}
+
+.final-result{
+    margin-left: 7%;
+}
+
+.play {
+    margin-top: 2vh;
+    width: 150px;
+    height: 50px;
+    padding: 3px;
+    background: #fff;
+    color: hsl(229, 64%, 46%); 
+    border-radius: 8px; 
+    cursor: pointer; 
+}
+
+#house-choice{
+    margin-left: 15%;
+}
+
+#my-choice, 
+#house-choice {
+    margin-top: 5vh;   
+}
+
+/*********************
+-to be used with JS
+*********************/
+
+.disabled {
+    pointer-events:none;
+    cursor: default;
+}
+
+/*********************
+-responsive
+*********************/
+
+@media only screen and (max-width:850px){
+  
+    #myDIV{
+        height: 240px;
+    }
+
+    #myDIV span {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+   
+    .keep-score {
+        align-items: center;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .score {
+        font-size: 8px;
+    }
+
+    .rules {
+        justify-content: center;
+    }
+
+    #myDIV {
+        max-height: 225px;
+        padding:2%;
+    }
+
+    #myDIV p {
+        font-size: 8px;
+    }
+
+    .choice {
+        justify-content: center;
+    }   
+
+}
+
+@media only screen and (max-width:375px){
+    
+    #myDIV {
+        padding: 2%;
+        height: 80px;
+    }
+
+    #myDIV p {
+        display: none;
+    } 
+
+}
+
+
+
+
+
+
+
+

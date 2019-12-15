@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Rock-Paper-Scissor</title>
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header class="keep-score">
+            <img src="assets/images/logo.svg" alt="logo" class="logo">
+            <p class="score">PLAYER SCORE <br /><span class="number-1">0</span></p>
+            <p class="score">HOUSE SCORE <br /><span class="number-2">0</span></p>
+        </header>  
+        
+        <section class="game">
+            <div class="cover">
+                <img src="assets/images/icon-paper.svg" alt="paper" class="paper">           
+                <img src="assets/images/icon-scissors.svg" alt="scissors" class="scissors">
+                <img src="assets/images/icon-rock.svg" alt="rock" class="rock">
+            </div>         
+        </section>
+        <!--Displays only when user clicks on icons -->
+        <section class="nodisplay" >
+            <div class="choice">
+                <div class="your-choice"><p class="picked">You Picked</p><img src="assets/images/icon-rock.svg" alt="your-choice" id="my-choice"></div>
+                <div class="result"><p class="final-result">YOU WIN</p></BR><p class="play">Play Again</p></div>
+                <div class="computer-choice"><p class="picked">The House Picked</p><img src="#" alt="computer-choice" id="house-choice"></div></section>
+            </div>
+        </section>
+
+        <section class="rules">
+            <button class="newGame">NEW GAME</button>
+            <button class="toggle">RULES</button>                                       
+        </section>
+        <!--Displays when user clicks rules button -->
+        <div id="myDIV">  
+          <p class="expl">RULES <span class="close">X</span></p>     
+          <img src="assets/images/image-rules.svg" alt="rules" class="expl-rules">  
+        </div> 
+
+        <script src="assets/scripts/game.js" defer></script>
+    </body>
+</html>
