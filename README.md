@@ -22,6 +22,6 @@ The main game area has three buttons, rock, paper and scissor. Above that there 
 counters. Bellow that are the two buttons for the rules and new game.
 
 # Improvements to be Made
-Even though the site is responsive, i don't like the way the rules are displayed in certain screen sizes.
-There is no max score, i could give the player a way to set a max score. For example, best out of three.
-I could also use php to link to a database to store the game results.
+Even though the site is responsive, i don't like the way the rules are displayed in certain screen sizes.<br/>
+There is no max score, i could give the player a way to set a max score. For example, best out of three.<br/>
+I could also use php to link to a database to store the game results.<br/>
